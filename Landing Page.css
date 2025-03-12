@@ -8,39 +8,87 @@ body {
 }
 
 nav {
-    width: 100%; /* Full width */
-    background-color: yellow; /* Background color */
+    width: 100%;
+    /* Full width */
+    background-color: yellow;
+    /* Background color */
     height: 1.3cm;
     font-size: 1.5em;
-    position: fixed; /* Fix the nav bar at the top */
-    top: 0; /* Position it at the very top */
-    display: flex; /* Use Flexbox */
-    align-items: center; /* Center items vertically */
+    position: fixed;
+    /* Fix the nav bar at the top */
+    top: 0;
+    /* Position it at the very top */
+    display: flex;
+    /* Use Flexbox */
+    align-items: center;
+    /* Center items vertically */
+    justify-content: space-between;
+    /* Space between left and right items */
 }
 
 nav ul {
     margin: 0;
     padding: 0;
-    list-style: none; /* Remove default list styling */
-    display: flex; /* Use Flexbox for the list */
+    list-style: none;
+    /* Remove default list styling */
+    display: flex;
+    /* Use Flexbox for the list */
+}
+
+nav ul.left {
+    justify-content: flex-start;
+    /* Align the left list to the start */
+}
+
+nav ul.center {
+    justify-content: center;
+    /* Center the menu items */
+    flex-grow: 1;
+    /* Allow the center list to grow */
+}
+
+nav ul.right {
+    justify-content: flex-end;
+    /* Align the right list to the end */
 }
 
 nav li {
-    margin: 0; /* Remove margin */
-    display: inline; /* Display list items inline */
+    margin: 0;
+    /* Remove margin */
+    display: flex;
+    /* Use Flexbox for list items */
+    align-items: center;
+    /* Center items vertically */
+    border-right: 1px solid rgb(218, 203, 203);
+    /* Add right border */
+}
+
+nav li.sign_in {
+    border-right: none;
+    /* Remove border from the "Sign In" item */
 }
 
 nav li:last-child {
-    border-right: none; /* Remove border from the last item */
+    border-right: none;
+    /* Remove border from the last item */
 }
 
 nav a {
     text-decoration: none;
     color: black;
-    padding: 5px 10px; /* Add padding for better click area */
-    display: block; /* Make the anchor tag a block element */
+    padding: 0 10px;
+    /* Add padding for better click area */
+    display: block;
+    /* Make the anchor tag a block element */
+    height: 100%;
+    /* Make the anchor tag take the full height of the nav bar */
+    display: flex;
+    /* Use Flexbox for anchor tags */
+    align-items: center;
+    /* Center items vertically */
 }
 
 nav a:hover {
-    background-color: #cccc00; /* Change background color on hover */
+    background-color: #cccc00;
+    /* Change background color on hover */
 }
