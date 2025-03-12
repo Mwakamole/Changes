@@ -8,27 +8,39 @@ body {
 }
 
 nav {
-    width: 100%;    /* Full width */
-    background-color: yellow;    /* Background color */
+    width: 100%; /* Full width */
+    background-color: yellow; /* Background color */
     height: 1.3cm;
     font-size: 1.5em;
-    position: fixed;   /* Fix the nav bar at the top */
-    top: 0;   /* Position it at the very top */
-    display: flex;    /* Use Flexbox */
-    align-items: center;    /* Center items vertically */
+    position: fixed; /* Fix the nav bar at the top */
+    top: 0; /* Position it at the very top */
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Center items vertically */
 }
 
 nav ul {
     margin: 0;
     padding: 0;
-    list-style: none;    /* Remove default list styling */
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Use Flexbox for the list */
 }
 
 nav li {
-    display: inline;    /* Display list items inline */
+    margin: 0; /* Remove margin */
+    display: inline; /* Display list items inline */
+}
+
+nav li:last-child {
+    border-right: none; /* Remove border from the last item */
 }
 
 nav a {
     text-decoration: none;
     color: black;
+    padding: 5px 10px; /* Add padding for better click area */
+    display: block; /* Make the anchor tag a block element */
+}
+
+nav a:hover {
+    background-color: #cccc00; /* Change background color on hover */
 }
