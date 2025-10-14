@@ -29,6 +29,17 @@ header {
   font-size: 24px;
   font-weight: bold;
 }
+.signup-form select {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  outline: none;
+  background-color: white;
+  color: #000;
+}
+
 
 /* Sign Up Container */
 .container {

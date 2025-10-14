@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root"; // change if needed
 $password = ""; // change if you have a DB password
-$dbname = "user_auth"; // your database name
+$dbname = "changes"; // your database name
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -45,5 +45,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   $stmt->close();
   $conn->close();
+} else {
+  // Show the registration form
+  ?>
+  <form action="SignUp.php" method="POST">
+    <input type="text" name="firstname" required placeholder="First Name">
+    <input type="text" name="lastname" required placeholder="Last Name">
+    <input type="number" name="age" required placeholder="Age">
+    <input type="text" name="gender" required placeholder="Gender">
+    <input type="email" name="email" required placeholder="Email">
+    <input type="text" name="username" required placeholder="Username">
+    <input type="password" name="password" required placeholder="Password">
+    <input type="password" name="confirm_password" required placeholder="Confirm Password">
+    <button type="submit">Sign Up</button>
+  </form>
+  <?php
 }
 ?>
