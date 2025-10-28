@@ -1,0 +1,96 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FFD700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Header (Fixed Navbar) */
+header {
+  width: 100%;
+  background-color: #000;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;      /* 👈 Keeps navbar visible at top */
+  top: 0;
+  left: 0;
+  z-index: 1000;        /* 👈 Ensures it stays above other elements */
+}
+
+.logo {
+  color: #FFD700;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Page Content (Pushes content below fixed navbar) */
+.container {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  margin-top: 120px; /* 👈 Adds space below the fixed navbar */
+  text-align: center;
+}
+
+
+/* Container */
+.container {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Form */
+.login-form input {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+}
+
+.login-form input:focus {
+  border-color: #0a0a0a;
+  box-shadow: 0 0 1px #000;
+}
+
+.login-form button {
+  background-color: #000;
+  color: #FFD700;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #252524;
+  color: #FFD700;
+  border: 2px solid #000;
+}

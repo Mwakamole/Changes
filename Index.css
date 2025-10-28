@@ -105,6 +105,29 @@ nav button {
   background-color: #000;
   color: #FFD700;
 }
+
+/* ensure login links look like the button */
+nav a.login {
+  margin-left: 15px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: transparent;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  position: relative;
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+/* .login existing styles will still apply */
+.login {
+  background-color: transparent;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+}
+
 /* Wellness Choice Section */
 .wellness-choice {
   margin-top: 60px;
