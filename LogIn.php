@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// if not POST, show the login form page
+// Redirect if accessed directly (not POST)
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: LogInPage.html');
     exit;
@@ -9,9 +9,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 // Database connection settings
 $servername = "localhost";
-$username = "root"; // change if needed
-$password = ""; // change if you have a DB password
-$dbname = "changes"; // same as your SignUp.php
+$username = "root";
+$password = "";
+$dbname = "changes";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -23,11 +23,12 @@ if ($conn->connect_error) {
 
 // Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $email = trim($_POST['email']);
+  // Sanitize input
+  $email = htmlspecialchars(trim($_POST['email']));
   $password = $_POST['password'];
 
   // Fetch user by email
-  $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
+  $stmt = $conn->prepare("SELECT id, username, email, password FROM user_auth WHERE email = ?");
   $stmt->bind_param("s", $email);
   $stmt->execute();
   $result = $stmt->get_result();
@@ -37,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Verify hashed password
     if (password_verify($password, $user['password'])) {
-      // Start session
+      // Store user info in session
       $_SESSION['user_id'] = $user['id'];
       $_SESSION['username'] = $user['username'];
       $_SESSION['email'] = $user['email'];
