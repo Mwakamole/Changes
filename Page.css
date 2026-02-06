@@ -167,7 +167,7 @@ nav a.login {
 
 .fitness-goal {
   text-align: center;
-  padding: 80px 20px;
+  padding: 45px 20px;
   background-color: #FFD700;
   color: #000;
 }
@@ -214,5 +214,7 @@ nav a.login {
   text-align: center;
   padding: 20px;
   margin-top: 80px;
+  position: relative;
+  bottom: -3px ;
   font-size: 14px;
 }
