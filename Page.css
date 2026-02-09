@@ -30,6 +30,16 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   color: #FFD700;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+nav a.active {
+  border-bottom: 3px solid #FFD700;
+  padding-bottom: 5px;
 }
 
 nav button {
