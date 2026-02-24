@@ -24,7 +24,10 @@ header {
 .logo {
   font-size: 24px;
   font-weight: bold;
+  text-decoration: none;
+  color: #FFD700;
 }
+
 
 nav a {
   margin: 0 15px;
