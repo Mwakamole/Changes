@@ -30,3 +30,47 @@ nav a{
 nav{
     text-decoration: none;
 }
+nav a:hover{
+    opacity: 0.8;
+}
+nav a.active{
+    border-bottom: 3px solid #FFD700;
+    padding-bottom: 5px;
+}
+.login{
+    background-color: transparent;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+}
+.signup{
+    background-color: #FFD700;
+    color: #000;
+}
+.signup-link {
+  background-color: #FFD700;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 2px solid #000;
+}
+
+.signup-link:hover {
+  background-color: #000;
+  color: #FFD700;
+}
+nav a.login {
+  margin-left: 15px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: transparent;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  position: relative;
+  z-index: 9999;
+  pointer-events: auto;
+}
