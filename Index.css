@@ -30,6 +30,7 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   color: #FFD700;
+  transition: 0.3s;
 }
 
 nav button {
@@ -52,7 +53,6 @@ nav button {
   color: #000;
 }
 
-/* Hero Section */
 .hero {
   text-align: center;
   padding: 50px 20px;
@@ -83,7 +83,7 @@ nav button {
   font-size: 18px;
   border: none;
   border-radius: 8px;
-  text-decoration: none; /* Make sure links don't have underlines */
+  text-decoration: none;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -106,7 +106,6 @@ nav button {
   color: #FFD700;
 }
 
-/* ensure login links look like the button */
 nav a.login {
   margin-left: 15px;
   padding: 10px 20px;
@@ -121,14 +120,12 @@ nav a.login {
   pointer-events: auto;
 }
 
-/* .login existing styles will still apply */
 .login {
   background-color: transparent;
   color: #FFD700;
   border: 2px solid #FFD700;
 }
 
-/* Wellness Choice Section */
 .wellness-choice {
   margin-top: 60px;
   text-align: center;
@@ -143,8 +140,8 @@ nav a.login {
 .choices {
   display: flex;
   justify-content: center;
-  gap: 40px;      /* Increased gap for more spacing */
-  margin-top: 20px; /* Adds space above the buttons */
+  gap: 40px;     
+  margin-top: 20px; 
 }
 
 .choice-btn {

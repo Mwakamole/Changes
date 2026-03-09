@@ -3,20 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Reset & Font */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #FFD700; /* bright yellow */
+  background-color: #FFD700; 
   color: black;
 }
 
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -68,4 +61,71 @@ nav button {
 .signup {
   background-color: #FFD700;
   color: #000;
+}
+.signup-link {
+  background-color: #FFD700;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 2px solid #000;
+}
+
+.signup-link:hover {
+  background-color: #000;
+  color: #FFD700;
+}
+
+nav a.login {
+  margin-left: 15px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: transparent;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  position: relative;
+  z-index: 9999;
+  pointer-events: auto;
+}
+.login {
+  background-color: transparent;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+}
+.Our-story {
+    display: flex;
+    flex-wrap: wrap;         
+    align-items: center;       
+    justify-content: center;    
+    max-width:900px;            
+    margin:0;    
+    height:50%;
+}
+
+.Our-story .story-text,
+.Our-story .story-image {
+    flex:1 1 50%;               
+    min-width:250px;            
+}
+
+.Our-story .story-text {
+    padding-right:20px;
+    padding-left: 70px;
+}
+
+.Our-story .story-image img {
+    width:100%;                 
+    height:auto;                
+    display:block;              
+    object-fit:contain;        
+}
+@media (max-width:600px) {
+    .Our-story .story-text,
+    .Our-story .story-image {
+        flex:1 1 100%;
+    }
 }
