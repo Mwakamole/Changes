@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FFD700; /* bright yellow */
+  color: black;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  background-color: #000;
+  color: #FFD700;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFD700;
+}
+
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #FFD700;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+nav a.active {
+  border-bottom: 3px solid #FFD700;
+  padding-bottom: 5px;
+}
+
+nav button {
+  margin-left: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login {
+  background-color: transparent;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+}
+
+.signup {
+  background-color: #FFD700;
+  color: #000;
+}
