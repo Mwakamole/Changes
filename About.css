@@ -6,9 +6,11 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #FFD700; 
+  background-color: #FFD700;
   color: black;
 }
+
+/* NAVBAR (UNCHANGED) */
 
 header {
   display: flex;
@@ -25,7 +27,6 @@ header {
   text-decoration: none;
   color: #FFD700;
 }
-
 
 nav a {
   margin: 0 15px;
@@ -62,6 +63,7 @@ nav button {
   background-color: #FFD700;
   color: #000;
 }
+
 .signup-link {
   background-color: #FFD700;
   color: #000;
@@ -91,41 +93,63 @@ nav a.login {
   z-index: 9999;
   pointer-events: auto;
 }
-.login {
-  background-color: transparent;
-  color: #FFD700;
-  border: 2px solid #FFD700;
-}
-.Our-story {
+
+/* ABOUT PAGE SECTION */
+
+.Our-story{
     display: flex;
-    flex-wrap: wrap;         
-    align-items: center;       
-    justify-content: center;    
-    max-width:900px;            
-    margin:0;    
-    height:50%;
+    width: 100%;
+    height: 50vh;   /* section takes half the screen */
 }
 
-.Our-story .story-text,
-.Our-story .story-image {
-    flex:1 1 50%;               
-    min-width:250px;            
+/* TEXT SIDE */
+
+.story-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
 }
 
-.Our-story .story-text {
-    padding-right:20px;
-    padding-left: 70px;
+.story-text h2{
+    font-size: 42px;
+    margin-bottom: 20px;
 }
 
-.Our-story .story-image img {
-    width:100%;                 
-    height:auto;                
-    display:block;              
-    object-fit:contain;        
+.story-text p{
+    font-size: 18px;
+    line-height: 1.6;
 }
-@media (max-width:600px) {
-    .Our-story .story-text,
-    .Our-story .story-image {
-        flex:1 1 100%;
+
+/* IMAGE SIDE */
+
+.story-image{
+    width: 50%;
+}
+
+.story-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px){
+
+    .Our-story{
+        flex-direction: column;
     }
+
+    .story-text,
+    .story-image{
+        width: 100%;
+    }
+
+    .story-text{
+        padding: 40px;
+        text-align: center;
+    }
+
 }
