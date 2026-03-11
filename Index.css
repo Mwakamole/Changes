@@ -158,3 +158,13 @@ nav a.login {
   background-color: #FFD700;
   color: #000;
 }
+.site-footer {
+  background-color: #000;
+  color: #FFD700;
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px;
+  position: relative;
+  bottom: -3px ;
+  font-size: 14px;
+}

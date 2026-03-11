@@ -105,4 +105,16 @@ header {
   text-decoration: none; /* Remove underline */
 }
 
+/* footer styling shared across pages */
+.site-footer {
+  background-color: #000;
+  color: #FFD700;
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px;
+  position: relative;
+  bottom: -3px ;
+  font-size: 14px;
+}
+
 

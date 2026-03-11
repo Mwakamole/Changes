@@ -153,3 +153,30 @@ nav a.login {
     }
 
 }
+.core-value{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+}
+#love{
+  font-size:xx-large;
+  text-align: center;
+  justify-content: center;
+}
+.core-value p{
+    margin-top: 20%;
+    font-size: x-large;
+    
+}
+
+/* footer styling shared across pages */
+.site-footer {
+  background-color: #000;
+  color: #FFD700;
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px;
+  position: relative;
+  bottom: -3px ;
+  font-size: 14px;
+}
