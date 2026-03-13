@@ -149,33 +149,19 @@ nav a.login {
   }
 }
 
-.social-media {
-  display: flex;
-  gap: 15px;
-  margin-top: 20px;
+.social-media{
+margin-top:20px;
+display:flex;
+gap:15px;
 }
 
-.social-media a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  
-  color: #FFD700;
-  background: #000;
-  border-radius: 50%;
-  font-size: 18px;
-  transition: 0.3s;
-  text-decoration: none;
+.social-media img{
+width:40px;
+height:40px;
+cursor:pointer;
+transition:0.3s;
 }
 
-.social-media a:hover {
-  background: #000;
- 
-  transform: translateY(-2px);
-}
-
-img{
-  size: 3cm;
+.social-media img:hover{
+transform:scale(1.2);
 }
