@@ -19,7 +19,7 @@
         <a href="#">Wellness</a>
         <a href="Shop.html">Shop</a>
         <a href="About.html">About</a>
-        <a href="Contact.html" class="active">Contact</a>
+        <a href="Contact.php" class="active">Contact</a>
         <a href="/Changes/LogInPage.html" class="login">Log In</a>
         <a href="SignUpPage.html" class="signup-link">Sign Up</a>
     </nav> 
@@ -60,20 +60,17 @@ Check out our social media for the latest updates, fitness tips and wellness ins
 
 </div>
 
-<form class="contact-form">
+<form class="contact-form" action="SendEmail.php" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
 
-<input type="text" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
 
-<input type="email" placeholder="Your Email" required>
+    <input type="text" name="subject" placeholder="Subject">
 
-<input type="text" placeholder="Subject">
+    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
 
-<textarea rows="6" placeholder="Your Message"></textarea>
-
-<button type="submit">Send Message</button>
-
+    <button type="submit">Send Message</button>
 </form>
-
 </div>
 
 </section>
